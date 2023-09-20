@@ -30,7 +30,7 @@ public class ProgramMain extends Application {
 		return stage;
 	}
 
-	public void setStage(Stage stage) {
+	public static void setStage(Stage stage) {
 		ProgramMain.stage = stage;
 	}
 

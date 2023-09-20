@@ -1,28 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.geometry.Point3D?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
-   <children>
-      <AnchorPane layoutX="42.0" layoutY="-24.0" maxHeight="36.0" minHeight="36.0" prefHeight="36.0" style="-fx-background-color: #0E6EDD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1250.0" style="-fx-background-color: #BDBDBD;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+	<children>
+		<AnchorPane fx:id="stageAnchorPane" layoutX="42.0" layoutY="-24.0" maxHeight="36.0" minHeight="20.0" prefHeight="20.0" prefWidth="1250.0" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<ImageView fx:id="exitImageView" fitHeight="13.0" fitWidth="13.0" layoutX="1230.0" layoutY="3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1230.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="3.0">
+					<image>
+						<Image url="@../resource/cruz.png" />
+					</image>
+					<rotationAxis>
+						<Point3D z="2.0" />
+					</rotationAxis>
+				</ImageView>
+				<ImageView fx:id="exitImageView1" fitHeight="13.0" fitWidth="13.0" layoutX="1191.0" layoutY="3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="3.0">
+					<image>
+						<Image url="@../resource/menos-pequeno%20(1).png" />
+					</image>
+				</ImageView>
+				<ImageView fx:id="exitImageView11" fitHeight="13.0" fitWidth="13.0" layoutX="1211.0" layoutY="3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="3.0">
+					<image>
+						<Image url="@../resource/expandir.png" />
+					</image>
+				</ImageView>
+			</children>
+		</AnchorPane>
+		<AnchorPane fx:id="stageLate" layoutY="20.0" prefHeight="700.0" prefWidth="50.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
          <children>
-            <ImageView fx:id="exitImageView" fitHeight="30.0" fitWidth="30.0" layoutX="1217.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1217.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
-               <image>
-                  <Image url="@../../../../Downloads/circulo-cruzado%20(3).png" />
-               </image>
-               <rotationAxis>
-                  <Point3D z="2.0" />
-               </rotationAxis>
-            </ImageView>
-            <ImageView fx:id="minizeImageView" fitHeight="30.0" fitWidth="30.0" layoutX="1017.0" layoutY="-53.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="1184.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="3.0">
-               <image>
-                  <Image url="@../resource/menos-pequeno.png" />
-               </image>
-            </ImageView>
+            <VBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="50.0" spacing="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../resource/menu-items/casa.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="10.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/definicoes.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/do-utilizador.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/em-formacao.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/escudo.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/nuvem.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/em-formacao.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/camadas.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
          </children>
-      </AnchorPane>
-   </children>
+         <effect>
+            <Glow level="0.0">
+               <input>
+                  <InnerShadow />
+               </input>
+            </Glow>
+         </effect></AnchorPane>
+	</children>
+   <effect>
+      <Glow>
+         <input>
+            <InnerShadow />
+         </input>
+      </Glow>
+   </effect>
 </AnchorPane>
