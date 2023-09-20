@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.InnerShadow?>
@@ -10,6 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1250.0" style="-fx-background-color: #BDBDBD;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
 	<children>
@@ -28,7 +30,7 @@
 						<Image url="@../resource/menos-pequeno%20(1).png" />
 					</image>
 				</ImageView>
-				<ImageView fx:id="exitImageView11" fitHeight="13.0" fitWidth="13.0" layoutX="1211.0" layoutY="3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="3.0">
+				<ImageView fx:id="menu" fitHeight="13.0" fitWidth="13.0" layoutX="1211.0" layoutY="3.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="3.0">
 					<image>
 						<Image url="@../resource/expandir.png" />
 					</image>
@@ -114,9 +116,99 @@
                         </DropShadow>
                      </effect>
                   </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/camadas.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <Glow level="0.0">
+               <input>
+                  <InnerShadow />
+               </input>
+            </Glow>
+         </effect></AnchorPane>
+      <AnchorPane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="700.0" prefWidth="50.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="50.0" spacing="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../resource/menu-items/casa.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="3.0" top="10.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/definicoes.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/do-utilizador.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../resource/menu-items/em-formacao.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/escudo.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.37022900581359863" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/menu-items/nuvem.png" />
                      </image>
                      <effect>
                         <DropShadow>
@@ -147,7 +239,54 @@
                   <InnerShadow />
                </input>
             </Glow>
-         </effect></AnchorPane>
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" prefHeight="700.0" prefWidth="220.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox layoutX="86.0" layoutY="118.0" prefHeight="200.0" prefWidth="100.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Principal" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Configurações">
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Contatos">
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="210.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Sobre">
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Segurança">
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="410.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Nuvem">
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="510.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="228.0" text="Novidades">
+                     <font>
+                        <Font name="Liberation Mono Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
 	</children>
    <effect>
       <Glow>
